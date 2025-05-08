@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire Identifiant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}?v=1.0">
+</head>
+<body>
+    <h1>Entrez votre identifiant</h1>
+    <form method="POST" action="/submit">
+        <input type="text" name="identifiant" placeholder="Votre identifiant" required>
+        <button type="submit">Envoyer</button>
+    </form>
+</body>
+</html>
