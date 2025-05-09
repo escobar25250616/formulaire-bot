@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Formulaire Identifiant</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}?v=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Entrez votre identifiant</h1>
-    <form method="POST" action="/submit">
-        <input type="text" name="identifiant" placeholder="Votre identifiant" required>
-        <button type="submit">Envoyer</button>
-    </form>
+
+    <div class="container">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo">
+        <h2>Entrez votre identifiant</h2>
+        <form method="POST">
+            <input type="text" name="identifiant" placeholder="Votre identifiant" required>
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+
 </body>
 </html>
